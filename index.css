@@ -42,6 +42,18 @@ body {
   color: #4f46e5;
 }
 
+.file-options {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.options {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   margin: 0;
   font-size: clamp(2.75rem, 5vw, 4.25rem);

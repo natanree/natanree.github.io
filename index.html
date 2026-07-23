@@ -21,7 +21,7 @@
       </header>
       <section>
         <div class="file-options">
-          <input type="file" id="fileInput" accept=".json"/>
+          <input type="file" class="form-control" id="fileInput" accept=".json"/>
         </div>
         <div class="options">
           <button id="addButton" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#addSeriesModal">Add Series</button>
@@ -35,21 +35,21 @@
                 <div class="modal-body">
                   <input type="text" id="seriesTitle" class="form-control mb-2" placeholder="Series Title" />
                   <input type="number" min="0" id="seriesChapter" class="form-control mb-2" placeholder="Current Chapter" />               
-                  <select class="form-select" id="seriesStatus">
+                  <select class="form-select mb-2" id="seriesStatus">
                     <option value="" disabled selected>Select Status</option>
                     <option value="Reading">Reading</option>
                     <option value="On Hold">On Hold</option>
                     <option value="Dropped">Dropped</option>
                     <option value="Completed">Completed</option>
                   </select>
-                  <select class="form-select" id="seriesType">
+                  <select class="form-select mb-2" id="seriesType">
                     <option value="" disabled selected>Select Type</option>
                     <option value="Manga">Manga</option>
                     <option value="Manhua">Manhua</option>
                     <option value="Manhwa">Manhwa</option>
                   </select>
+                  <div id="addSeriesAlertPlaceholder" class="mb-2"></div>
                 </div>
-                <div id="addSeriesAlertPlaceholder"></div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="addSeriesCancelButton">Cancel</button>
                   <button type="button" class="btn btn-primary" id="addSeriesSubmitButton">Submit</button>
